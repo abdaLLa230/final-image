@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const questionDiv = document.createElement('div');
             questionDiv.className = 'bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-indigo-100 transform hover:-translate-y-0.5';
             questionDiv.innerHTML = `
-                <p class="font-sm text-gray-900 mb-4 text-md">${index + 1}. ${q.question}</p>
+                <p class="font-md text-gray-900 mb-4 text-md">${index + 1}. ${q.question}</p>
                 <div class="space-y-3">
                     <label class="flex items-center space-x-3 cursor-pointer group">
                         <input type="radio" name="tf-${index}" value="true" 
@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const questionDiv = document.createElement('div');
             questionDiv.className = 'bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-teal-100 transform hover:-translate-y-0.5';
             questionDiv.innerHTML = `
-                <p class="font-sm text-gray-900 mb-4 text-md">${index + 1}. ${q.question}</p>
+                <p class="font-md text-gray-900 mb-4 text-md">${index + 1}. ${q.question}</p>
                 <div class="space-y-3">
                     ${q.options.map((option, optIndex) => `
                         <label class="flex items-center space-x-3 cursor-pointer group">
@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const questionDiv = document.createElement('div');
             questionDiv.className = 'bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-indigo-100 transform hover:-translate-y-0.5';
             questionDiv.innerHTML = `
-                <p class="font-sm text-gray-900 mb-4 text-md">${questionNumber}. ${q.text}</p>
+                <p class="font-md text-gray-900 mb-4 text-md">${questionNumber}. ${q.text}</p>
                 <input type="text" 
                     class="w-full p-3 border-2 border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-400 focus:border-gray-400 transition-all duration-200 text-gray-900 placeholder-gray-400 bg-white"
                     value="${q.userAnswer || ''}"
